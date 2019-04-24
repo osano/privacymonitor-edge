@@ -1,0 +1,9 @@
+{
+    "generationTool": "pwabuilder",
+    "generationToolVersion": "2.0.3-rc.0",
+    "platformId": "edgeextension",
+    "platformPackage": "pwabuilder-edgeextension",
+    "platformVersion": "2.0.0-rc.2",
+    "generatedFrom": "CLI",
+    "generationDate": "2019-03-13 21:52:59 Z"
+}
