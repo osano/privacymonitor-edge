@@ -9,16 +9,18 @@
 
 ## Dependencies & Requirements
 
-Privacy Monitor has no external dependencies.
+Building the extension requires the npm dependencies in `package.json` and `pwabuilder`.
 
 ## Building
 
 1. Clone this repository.
 2. Edit to your heart's content.
-3. To build the extension for publishing `npm install` & `gulp` - this extension requires `pwabuilder`. The NPM preinstall will attempt to install pwabuilder, however if you run into build issues you may need to manually install using `npm i -g pwabuilder`
-4. Upload the edgeExtension.appx to the store
+3. To build the extension for publishing, run `npm install` and `npx gulp`. This extension requires `pwabuilder`. The npm preinstall script attempts to install `pwabuilder`. If you have build issues, you may need to install it manually with `npm i -g pwabuilder`.
+4. Upload `edgeExtension.appx` to the store.
 
-You must create your own identity.json file. It should reside in the `json` folder in the following format:
+The packaging task also reads `appxmanifest-skeleton.xml` from the repository root, but this file is not present.
+
+You must create your own `identity.json` file. It should reside in the `json` folder in the following format:
 ```
 {
     "name": "Edge Store Package Name",
@@ -41,7 +43,7 @@ The U.S. Government Department of Commerce, Bureau of Industry and Security
 (BIS), has classified this software as Export Commodity Control Number (ECCN)
 5D002.C.1, which includes information security software using or performing
 cryptographic functions with asymmetric algorithms. The form and manner of this
-Apache Software Foundation distribution makes it eligible for export under the
+Osano Privacy Monitor distribution makes it eligible for export under the
 License Exception ENC Technology Software Unrestricted (TSU) exception (see the
 BIS Export Administration Regulations, Section 740.13) for both object code and
 source code.
@@ -50,6 +52,6 @@ source code.
 [logo]: Contrib/logo.png
 [osano]: https://www.osano.com
 [li]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[ll]: LICENSE
+[ll]: https://spdx.org/licenses/MIT.html
 [pi]: https://img.shields.io/badge/platform-Microsoft%20Edge-lightgrey.svg
 [pl]: https://docs.microsoft.com/en-us/microsoft-edge/extensions
